@@ -9,6 +9,7 @@
       content="Bienvenue ! Ce site est dédié aux différentes mesures du temps pendant l'Antiquité."
     />
     <link rel="icon" href="/assets/images/favicon.ico" />
+    <link rel="preload" href="/assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
@@ -16,61 +17,176 @@
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-brand" href="/">
-          <img src="/assets/images/logo.png" alt="" width="138" height="192" />
-          <span>La mesure du temps dans l'Antiquité</span>
-        </a>
-        <input
-          class="site-nav__toggle"
-          type="checkbox"
-          id="menu-toggle"
-          aria-label="Afficher le menu"
-        />
-        <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
-        <nav class="site-nav" aria-label="Navigation principale">
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="/" aria-current="page">Accueil</a></li>
-            <li class="site-nav__item">
-              <a href="/notions-de-physique.html">Notions de physique</a>
-            </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-l-annee/">La mesure de l'année</a>
-              <ul class="site-nav__submenu">
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
-                </li>
+      <a class="site-brand" href="/">
+        <img src="/assets/images/logo.png" alt="" width="48" height="48" />
+        <span>La mesure du temps dans l'Antiquité</span>
+      </a>
+      <input
+        class="site-nav__toggle"
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Afficher le menu"
+      />
+      <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a href="/" aria-current="page">Accueil</a></li>
+          <li><a href="/video.html">Vidéos</a></li>
+          <li><a href="/album.html">Album</a></li>
+          <li><a href="/quiz.html">Quiz</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="site-banner"></div>
+    <div class="site-wrapper">
+      <main id="contenu" class="page">
+        <h1>Accueil</h1>
+        <div class="columns columns--wide-first">
+          <div>
+            <p>
+              Bienvenue ! Ce site est dédié aux différentes mesures du temps pendant l'Antiquité.
+            </p>
+            <p>
+              &quot;Les hommes ont éprouvé le besoin d’instruments qui permettent de penser et
+              d’utiliser le déroulement du temps tel qu’ils peuvent le connaître.&quot; Jacques Le
+              Goff, 2004
+            </p>
+          </div>
+          <div>
+            <figure class="figure">
+              <a href="/assets/images/glass-time-watch-business.jpg"
+                ><img
+                  src="/assets/images/glass-time-watch-business.jpg"
+                  alt="montre noire"
+                  width="1600"
+                  height="1060"
+                  loading="lazy"
+              /></a>
+              <figcaption>montre noire</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p>
+          De moyens rudimentaires durant la Préhistoire à l'horloge atomique d'aujourd'hui, les
+          techniques n'ont cessé d'évoluer. Pendant l'Antiquité, les différentes civilisations ont
+          conçu des calendriers et horloges de plus en plus précis. Horloges solaires ou horloges à
+          eau, calendriers lunaires, luni-solaires ou solaires, tant de diversités pour finalement
+          permettre à l'Homme de progresser dans la maîtrise du temps. Nous analyserons cela en
+          tentant de répondre à la problématique suivante :
+        </p>
+        <h2>
+          Comment l'astronomie a-t-elle influencé les différentes civilisations de l'Antiquité dans
+          la mesure du temps?
+        </h2>
+        <p>
+          Nous aborderons d'abord les différentes mesures de l'année à travers des calendriers de
+          civilisations très éloignées. Puis, les mesures de la journée comme le cadran solaire ou
+          la clepsydre.
+        </p>
+        <p>
+          Nous vous invitons tout d'abord à consulter la page
+          <a href="/notions-de-physique.html">Notions de physique</a> pour bien comprendre le
+          fonctionnement de chaque objet étudié, puis ensuite de lire les pages :
+        </p>
+        <ol class="outline">
+          <li>
+            <a href="/mesure-de-l-annee/">I) La mesure de l'année</a>
+            <ol>
+              <li>
+                <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
+              </li>
+              <li>
+                <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
+                  >Les calendriers luni-solaires</a
+                >
+              </li>
+              <li>
+                <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="/mesure-de-la-journee/">II) La mesure de la journée</a>
+            <ol>
+              <li><a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a></li>
+              <li><a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a></li>
+            </ol>
+          </li>
+        </ol>
+        <p>
+          Pour conclure, l'étude des astres par les Premiers Hommes a permis d'aider les Hommes à
+          concevoir des méthodes pour maîtriser le temps.
+        </p>
+        <p>
+          Durant l'Antiquité, les Hommes ont usé de différents moyens de plus en plus ingénieux pour
+          mesurer le temps. Des instruments plus précis ont été conçu ensuite avec des outils encore
+          utilisés aujourd'hui comme les horloges, d'abord à pendules, puis atomiques.
+        </p>
+        <p>
+          Vous pouvez également regarder les autres contenus disponibles comme un
+          <a href="/album.html">album photo</a> sur les cadrans solaires de Briançon, un
+          <a href="/quiz.html">jeu</a> autour des gnomons et une <a href="/video.html">vidéo</a> sur
+          la fabrication d'une clepsydre.
+        </p>
+        <p>Voici notre <a href="/bibliographie.html">bibliographie</a>.</p>
+        <p>Ce site a été créé par des éleves de première S dans le cadre d'un TPE ;)</p>
+      </main>
+      <aside class="sidebar" aria-label="Sommaire">
+        <section class="widget">
+          <h2 class="widget__title">Menu</h2>
+          <ul class="widget__list">
+            <li><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></li>
+            <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
+            <li><a href="/notions-de-physique.html">Notions de physique</a></li>
+            <li><a href="/bibliographie.html">Bibliographie</a></li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title"><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-l-annee/calendriers-lunaires/calendrier-hebreu.html"
-                    >Le calendrier hébreu</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
-                    >Les calendriers luni-solaires</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
-                    >Le calendrier de Coligny</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
-                    >Le calendrier julien</a
+                    >Calendrier hébreu</a
                   >
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-la-journee/">La mesure de la journée</a>
-              <ul class="site-nav__submenu">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
+                >Les calendriers luni-solaires</a
+              >
+              <ul>
                 <li>
-                  <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
+                    >Calendrier de Coligny</a
+                  >
                 </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
+              <ul>
+                <li>
+                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
+                    >Calendrier julien</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title">
+            <a href="/mesure-de-la-journee/">II) La mesure de la journée</a>
+          </h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-solaires/gnomons.html">Les gnomons</a>
                 </li>
@@ -84,7 +200,11 @@
                     >Les anneaux de paysan</a
                   >
                 </li>
-                <li><a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-a-eau/clepsydres.html">Les clepsydres</a>
                 </li>
@@ -95,111 +215,15 @@
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item"><a href="/album.html">Album</a></li>
-            <li class="site-nav__item"><a href="/video.html">Vidéo</a></li>
-            <li class="site-nav__item"><a href="/quiz.html">Quiz</a></li>
-            <li class="site-nav__item"><a href="/bibliographie.html">Bibliographie</a></li>
-            <li class="site-nav__item"><a href="/contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main id="contenu" class="page">
-      <h1>La mesure du temps dans l'Antiquité</h1>
-      <div class="columns columns--wide-first">
-        <div>
-          <p>Bienvenue ! Ce site est dédié aux différentes mesures du temps pendant l'Antiquité.</p>
-          <blockquote>
-            <p>
-              « Les hommes ont éprouvé le besoin d’instruments qui permettent de penser et
-              d’utiliser le déroulement du temps tel qu’ils peuvent le connaître. »
-            </p>
-            <footer>Jacques Le Goff, 2004</footer>
-          </blockquote>
-        </div>
-        <div>
-          <figure class="figure">
-            <a href="/assets/images/glass-time-watch-business.jpg"
-              ><img
-                src="/assets/images/glass-time-watch-business.jpg"
-                alt="montre noire"
-                width="1600"
-                height="1060"
-                loading="lazy"
-            /></a>
-            <figcaption>montre noire</figcaption>
-          </figure>
-        </div>
-      </div>
-      <p>
-        De moyens rudimentaires durant la Préhistoire à l'horloge atomique d'aujourd'hui, les
-        techniques n'ont cessé d'évoluer. Pendant l'Antiquité, les différentes civilisations ont
-        conçu des calendriers et horloges de plus en plus précis. Horloges solaires ou horloges à
-        eau, calendriers lunaires, luni-solaires ou solaires, tant de diversités pour finalement
-        permettre à l'Homme de progresser dans la maîtrise du temps. Nous analyserons cela en
-        tentant de répondre à la problématique suivante :
-      </p>
-      <p class="question">
-        Comment l'astronomie a-t-elle influencé les différentes civilisations de l'Antiquité dans la
-        mesure du temps?
-      </p>
-      <p>
-        Nous aborderons d'abord les différentes mesures de l'année à travers des calendriers de
-        civilisations très éloignées. Puis, les mesures de la journée comme le cadran solaire ou la
-        clepsydre.
-      </p>
-      <p>
-        Nous vous invitons tout d'abord à consulter la page
-        <a href="/notions-de-physique.html">Notions de physique</a> pour bien comprendre le
-        fonctionnement de chaque objet étudié, puis ensuite de lire les pages :
-      </p>
-      <ol class="outline">
-        <li>
-          <a href="/mesure-de-l-annee/">I) La mesure de l'année</a>
-          <ol>
-            <li><a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a></li>
-            <li>
-              <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
-                >Les calendriers luni-solaires</a
-              >
-            </li>
-            <li><a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a></li>
-          </ol>
-        </li>
-        <li>
-          <a href="/mesure-de-la-journee/">II) La mesure de la journée</a>
-          <ol>
-            <li><a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a></li>
-            <li><a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a></li>
-          </ol>
-        </li>
-      </ol>
-      <p>
-        Pour conclure, l'étude des astres par les Premiers Hommes a permis d'aider les Hommes à
-        concevoir des méthodes pour maîtriser le temps.
-      </p>
-      <p>
-        Durant l'Antiquité, les Hommes ont usé de différents moyens de plus en plus ingénieux pour
-        mesurer le temps. Des instruments plus précis ont été conçu ensuite avec des outils encore
-        utilisés aujourd'hui comme les horloges, d'abord à pendules, puis atomiques.
-      </p>
-      <p>
-        Vous pouvez également regarder les autres contenus disponibles comme un
-        <a href="/album.html">album photo</a> sur les cadrans solaires de Briançon, un
-        <a href="/quiz.html">jeu</a> autour des gnomons et une <a href="/video.html">vidéo</a> sur
-        la fabrication d'une clepsydre.
-      </p>
-      <p>Voici notre <a href="/bibliographie.html">bibliographie</a>.</p>
-      <p>Ce site a été créé par des éleves de première S dans le cadre d'un TPE ;)</p>
-      <nav class="pager" aria-label="Pagination">
-        <a class="pager__link pager__link--next" href="/notions-de-physique.html" rel="next"
-          ><span>Page suivante</span>Notions de physique</a
-        >
-      </nav>
-    </main>
+        </section>
+      </aside>
+    </div>
     <footer class="site-footer">
-      <p>Site réalisé par des élèves de première S dans le cadre d'un TPE.</p>
-      <p><a href="/contact.html">Contact</a> · <a href="/bibliographie.html">Bibliographie</a></p>
+      <p>
+        Site réalisé par des élèves de première S dans le cadre d'un TPE ·
+        <a href="/contact.html">Contact</a>
+      </p>
     </footer>
   </body>
 </html>

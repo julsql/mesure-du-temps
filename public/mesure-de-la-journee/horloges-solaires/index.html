@@ -9,6 +9,7 @@
       content="Les plus anciennes horloges solaires sontles gnomons puis les cadrans solaires sont apparus. Enfin nous parlerons d'un type spécial de cadran solaire : l'a"
     />
     <link rel="icon" href="/assets/images/favicon.ico" />
+    <link rel="preload" href="/assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
@@ -16,63 +17,154 @@
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-brand" href="/">
-          <img src="/assets/images/logo.png" alt="" width="138" height="192" />
-          <span>La mesure du temps dans l'Antiquité</span>
-        </a>
-        <input
-          class="site-nav__toggle"
-          type="checkbox"
-          id="menu-toggle"
-          aria-label="Afficher le menu"
-        />
-        <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
-        <nav class="site-nav" aria-label="Navigation principale">
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="/">Accueil</a></li>
-            <li class="site-nav__item">
-              <a href="/notions-de-physique.html">Notions de physique</a>
-            </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-l-annee/">La mesure de l'année</a>
-              <ul class="site-nav__submenu">
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
-                </li>
+      <a class="site-brand" href="/">
+        <img src="/assets/images/logo.png" alt="" width="48" height="48" />
+        <span>La mesure du temps dans l'Antiquité</span>
+      </a>
+      <input
+        class="site-nav__toggle"
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Afficher le menu"
+      />
+      <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/video.html">Vidéos</a></li>
+          <li><a href="/album.html">Album</a></li>
+          <li><a href="/quiz.html">Quiz</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="site-banner"></div>
+    <div class="site-wrapper">
+      <main id="contenu" class="page">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <ol>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
+            <li aria-current="page">Les horloges solaires</li>
+          </ol>
+        </nav>
+        <h1>Les horloges solaires</h1>
+        <figure class="figure">
+          <a href="/assets/images/cadran-solaire2.png"
+            ><img
+              src="/assets/images/cadran-solaire2.png"
+              alt="Cadran solaire lent"
+              width="1146"
+              height="604"
+              loading="lazy"
+          /></a>
+          <figcaption>Cadran solaire lent</figcaption>
+        </figure>
+        <h2><u>Les horloges solaires :</u> les premiers instruments de la découpe de la journée</h2>
+        <p>
+          Les plus anciennes horloges solaires sont<a
+            href="/mesure-de-la-journee/horloges-solaires/gnomons.html"
+            >les gnomons</a
+          >
+          puis
+          <a href="/mesure-de-la-journee/horloges-solaires/cadrans-solaires.html"
+            >les cadrans solaires</a
+          >
+          sont apparus. Enfin nous parlerons d'un type spécial de cadran solaire :
+          <a href="/mesure-de-la-journee/horloges-solaires/anneaux-de-paysan.html"
+            >l'anneau de paysan</a
+          >.
+        </p>
+        <figure class="figure">
+          <a href="/assets/images/cadran-solaire-2.gif"
+            ><img
+              src="/assets/images/cadran-solaire-2.gif"
+              alt="Évolution de l'ombre du gnomon au cours de la journée"
+              width="1919"
+              height="1440"
+              loading="lazy"
+          /></a>
+          <figcaption>Gnomon au cours de la journée</figcaption>
+        </figure>
+        <div class="cards">
+          <article class="card">
+            <h2 class="card__title">
+              <a href="/mesure-de-la-journee/horloges-solaires/gnomons.html">Les gnomons</a>
+            </h2>
+          </article>
+          <article class="card">
+            <h2 class="card__title">
+              <a href="/mesure-de-la-journee/horloges-solaires/cadrans-solaires.html"
+                >Les cadrans solaires</a
+              >
+            </h2>
+          </article>
+          <article class="card">
+            <h2 class="card__title">
+              <a href="/mesure-de-la-journee/horloges-solaires/anneaux-de-paysan.html"
+                >Les anneaux de paysan</a
+              >
+            </h2>
+          </article>
+        </div>
+      </main>
+      <aside class="sidebar" aria-label="Sommaire">
+        <section class="widget">
+          <h2 class="widget__title">Menu</h2>
+          <ul class="widget__list">
+            <li><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></li>
+            <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
+            <li><a href="/notions-de-physique.html">Notions de physique</a></li>
+            <li><a href="/bibliographie.html">Bibliographie</a></li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title"><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-l-annee/calendriers-lunaires/calendrier-hebreu.html"
-                    >Le calendrier hébreu</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
-                    >Les calendriers luni-solaires</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
-                    >Le calendrier de Coligny</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
-                    >Le calendrier julien</a
+                    >Calendrier hébreu</a
                   >
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-la-journee/">La mesure de la journée</a>
-              <ul class="site-nav__submenu">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
+                >Les calendriers luni-solaires</a
+              >
+              <ul>
                 <li>
-                  <a href="/mesure-de-la-journee/horloges-solaires/" aria-current="page"
-                    >Les horloges solaires</a
+                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
+                    >Calendrier de Coligny</a
                   >
                 </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
+              <ul>
+                <li>
+                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
+                    >Calendrier julien</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title">
+            <a href="/mesure-de-la-journee/">II) La mesure de la journée</a>
+          </h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-la-journee/horloges-solaires/" aria-current="page"
+                >Les horloges solaires</a
+              >
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-solaires/gnomons.html">Les gnomons</a>
                 </li>
@@ -86,7 +178,11 @@
                     >Les anneaux de paysan</a
                   >
                 </li>
-                <li><a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-a-eau/clepsydres.html">Les clepsydres</a>
                 </li>
@@ -97,96 +193,15 @@
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item"><a href="/album.html">Album</a></li>
-            <li class="site-nav__item"><a href="/video.html">Vidéo</a></li>
-            <li class="site-nav__item"><a href="/quiz.html">Quiz</a></li>
-            <li class="site-nav__item"><a href="/bibliographie.html">Bibliographie</a></li>
-            <li class="site-nav__item"><a href="/contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main id="contenu" class="page">
-      <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <ol>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
-          <li aria-current="page">Les horloges solaires</li>
-        </ol>
-      </nav>
-      <h1>Les horloges solaires</h1>
-      <figure class="figure">
-        <a href="/assets/images/cadran-solaire2.png"
-          ><img
-            src="/assets/images/cadran-solaire2.png"
-            alt="Cadran solaire lent"
-            width="1146"
-            height="604"
-            loading="lazy"
-        /></a>
-        <figcaption>Cadran solaire lent</figcaption>
-      </figure>
-      <h2>Les horloges solaires : les premiers instruments de la découpe de la journée</h2>
-      <p>
-        Les plus anciennes horloges solaires sont<a
-          href="/mesure-de-la-journee/horloges-solaires/gnomons.html"
-          >les gnomons</a
-        >
-        puis
-        <a href="/mesure-de-la-journee/horloges-solaires/cadrans-solaires.html"
-          >les cadrans solaires</a
-        >
-        sont apparus. Enfin nous parlerons d'un type spécial de cadran solaire :
-        <a href="/mesure-de-la-journee/horloges-solaires/anneaux-de-paysan.html"
-          >l'anneau de paysan</a
-        >.
-      </p>
-      <figure class="figure">
-        <a href="/assets/images/cadran-solaire-2.gif"
-          ><img
-            src="/assets/images/cadran-solaire-2.gif"
-            alt="Évolution de l'ombre du gnomon au cours de la journée"
-            width="1919"
-            height="1440"
-            loading="lazy"
-        /></a>
-        <figcaption>Gnomon au cours de la journée</figcaption>
-      </figure>
-      <div class="cards">
-        <article class="card">
-          <h2 class="card__title">
-            <a href="/mesure-de-la-journee/horloges-solaires/gnomons.html">Les gnomons</a>
-          </h2>
-        </article>
-        <article class="card">
-          <h2 class="card__title">
-            <a href="/mesure-de-la-journee/horloges-solaires/cadrans-solaires.html"
-              >Les cadrans solaires</a
-            >
-          </h2>
-        </article>
-        <article class="card">
-          <h2 class="card__title">
-            <a href="/mesure-de-la-journee/horloges-solaires/anneaux-de-paysan.html"
-              >Les anneaux de paysan</a
-            >
-          </h2>
-        </article>
-      </div>
-      <nav class="pager" aria-label="Pagination">
-        <a class="pager__link pager__link--prev" href="/mesure-de-la-journee/" rel="prev"
-          ><span>Page précédente</span>II) La mesure de la journée</a
-        ><a
-          class="pager__link pager__link--next"
-          href="/mesure-de-la-journee/horloges-solaires/gnomons.html"
-          rel="next"
-          ><span>Page suivante</span>Les gnomons</a
-        >
-      </nav>
-    </main>
+        </section>
+      </aside>
+    </div>
     <footer class="site-footer">
-      <p>Site réalisé par des élèves de première S dans le cadre d'un TPE.</p>
-      <p><a href="/contact.html">Contact</a> · <a href="/bibliographie.html">Bibliographie</a></p>
+      <p>
+        Site réalisé par des élèves de première S dans le cadre d'un TPE ·
+        <a href="/contact.html">Contact</a>
+      </p>
     </footer>
   </body>
 </html>

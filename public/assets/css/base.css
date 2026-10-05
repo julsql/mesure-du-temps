@@ -1,41 +1,47 @@
-/* Base : variables de thème, reset minimal et typographie. */
+/* Base : polices, variables du thème d'origine (e-monsite), reset minimal et typographie. */
 
-:root {
-  color-scheme: light dark;
-
-  --color-bg: #faf6ee;
-  --color-surface: #ffffff;
-  --color-text: #2b2620;
-  --color-muted: #675e53;
-  --color-accent: #a84a24;
-  --color-border: #e4dccd;
-  --color-success: #2f7d4f;
-  --color-error: #b3352b;
-
-  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-heading: Georgia, "Times New Roman", serif;
-
-  --space-xs: 0.25rem;
-  --space-s: 0.5rem;
-  --space-m: 1rem;
-  --space-l: 2rem;
-  --space-xl: 3.5rem;
-
-  --radius: 0.5rem;
-  --content-width: 60rem;
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/roboto.woff2") format("woff2");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #14161c;
-    --color-surface: #1d2029;
-    --color-text: #ece6da;
-    --color-muted: #a8a093;
-    --color-accent: #ffa07a;
-    --color-border: #2e323d;
-    --color-success: #6fcf97;
-    --color-error: #ff8a80;
-  }
+@font-face {
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/droid-serif.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Courgette";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/courgette.woff2") format("woff2");
+}
+
+:root {
+  color-scheme: dark;
+
+  --color-bg: #181714;
+  --color-bar: #24241f;
+  --color-bar-border: #41413d;
+  --color-border: #25231f;
+  --color-text: #a4a79d;
+  --color-heading: #ffffff;
+  --color-link: #e7d244;
+  --color-title: #ffa07a;
+  --color-success: #8bc34a;
+  --color-error: #f44336;
+
+  --font-ui: "Roboto", sans-serif;
+  --font-heading: "Droid Serif", Georgia, serif;
+  --font-brand: "Courgette", cursive;
+  --font-content: Verdana, Geneva, sans-serif;
+
+  --header-height: 80px;
+  --container-width: 1170px;
 }
 
 *,
@@ -45,60 +51,46 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  font-size: 14px;
+  scroll-padding-top: calc(var(--header-height) + 1rem);
 }
 
 body {
   margin: 0;
+  padding-top: var(--header-height);
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-body);
-  font-size: 1.0625rem;
-  line-height: 1.7;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
-  line-height: 1.25;
-  text-wrap: balance;
+  font-family: var(--font-ui);
+  line-height: 1.43;
 }
 
 h1 {
-  margin: 0 0 var(--space-l);
-  font-size: clamp(1.9rem, 5vw, 2.75rem);
-}
-
-h2 {
-  margin: var(--space-l) 0 var(--space-m);
-  color: var(--color-accent);
-  font-size: 1.5rem;
-}
-
-h3 {
-  margin: var(--space-l) 0 var(--space-s);
-  font-size: 1.15rem;
+  margin: 20px 0;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-size: 2.143rem;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 p,
 ul,
 ol {
-  margin: 0 0 var(--space-m);
+  margin: 0 0 20px;
 }
 
 a {
-  color: var(--color-accent);
-  text-underline-offset: 0.15em;
+  color: var(--color-link);
+  text-decoration: none;
 }
 
-a:hover {
-  text-decoration-thickness: 2px;
+a:hover,
+a:focus {
+  color: var(--color-heading);
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 2px solid var(--color-link);
   outline-offset: 2px;
 }
 
@@ -112,8 +104,8 @@ sup {
   line-height: 0;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.571rem;
   }
 }

@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vidéo : fabrication d'une clepsydre — La mesure du temps dans l'Antiquité</title>
+    <title>Vidéos — La mesure du temps dans l'Antiquité</title>
     <meta
       name="description"
       content="La clepsydre que nous avons fabriqué. Elle dure une quinzaine de minutes."
     />
     <link rel="icon" href="/assets/images/favicon.ico" />
+    <link rel="preload" href="/assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
@@ -16,61 +17,105 @@
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-brand" href="/">
-          <img src="/assets/images/logo.png" alt="" width="138" height="192" />
-          <span>La mesure du temps dans l'Antiquité</span>
-        </a>
-        <input
-          class="site-nav__toggle"
-          type="checkbox"
-          id="menu-toggle"
-          aria-label="Afficher le menu"
-        />
-        <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
-        <nav class="site-nav" aria-label="Navigation principale">
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="/">Accueil</a></li>
-            <li class="site-nav__item">
-              <a href="/notions-de-physique.html">Notions de physique</a>
-            </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-l-annee/">La mesure de l'année</a>
-              <ul class="site-nav__submenu">
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
-                </li>
+      <a class="site-brand" href="/">
+        <img src="/assets/images/logo.png" alt="" width="48" height="48" />
+        <span>La mesure du temps dans l'Antiquité</span>
+      </a>
+      <input
+        class="site-nav__toggle"
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Afficher le menu"
+      />
+      <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/video.html" aria-current="page">Vidéos</a></li>
+          <li><a href="/album.html">Album</a></li>
+          <li><a href="/quiz.html">Quiz</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="site-banner"></div>
+    <div class="site-wrapper">
+      <main id="contenu" class="page">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <ol>
+            <li><a href="/">Accueil</a></li>
+            <li aria-current="page">Vidéos</li>
+          </ol>
+        </nav>
+        <h1>Vidéos</h1>
+        <div class="video">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/hIn9kKx8MKk"
+            title="Vidéo YouTube"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p>La clepsydre que nous avons fabriqué. Elle dure une quinzaine de minutes.</p>
+        <ul>
+          <li><a href="/video.html">Retour</a></li>
+        </ul>
+      </main>
+      <aside class="sidebar" aria-label="Sommaire">
+        <section class="widget">
+          <h2 class="widget__title">Menu</h2>
+          <ul class="widget__list">
+            <li><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></li>
+            <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
+            <li><a href="/notions-de-physique.html">Notions de physique</a></li>
+            <li><a href="/bibliographie.html">Bibliographie</a></li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title"><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-l-annee/calendriers-lunaires/calendrier-hebreu.html"
-                    >Le calendrier hébreu</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
-                    >Les calendriers luni-solaires</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
-                    >Le calendrier de Coligny</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
-                    >Le calendrier julien</a
+                    >Calendrier hébreu</a
                   >
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-la-journee/">La mesure de la journée</a>
-              <ul class="site-nav__submenu">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
+                >Les calendriers luni-solaires</a
+              >
+              <ul>
                 <li>
-                  <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
+                    >Calendrier de Coligny</a
+                  >
                 </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
+              <ul>
+                <li>
+                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
+                    >Calendrier julien</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title">
+            <a href="/mesure-de-la-journee/">II) La mesure de la journée</a>
+          </h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-solaires/gnomons.html">Les gnomons</a>
                 </li>
@@ -84,7 +129,11 @@
                     >Les anneaux de paysan</a
                   >
                 </li>
-                <li><a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-a-eau/clepsydres.html">Les clepsydres</a>
                 </li>
@@ -95,46 +144,15 @@
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item"><a href="/album.html">Album</a></li>
-            <li class="site-nav__item"><a href="/video.html" aria-current="page">Vidéo</a></li>
-            <li class="site-nav__item"><a href="/quiz.html">Quiz</a></li>
-            <li class="site-nav__item"><a href="/bibliographie.html">Bibliographie</a></li>
-            <li class="site-nav__item"><a href="/contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main id="contenu" class="page">
-      <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <ol>
-          <li><a href="/">Accueil</a></li>
-          <li aria-current="page">Vidéo : fabrication d'une clepsydre</li>
-        </ol>
-      </nav>
-      <h1>Vidéo : fabrication d'une clepsydre</h1>
-      <div class="video">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/hIn9kKx8MKk"
-          title="Vidéo YouTube"
-          loading="lazy"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <p>La clepsydre que nous avons fabriqué. Elle dure une quinzaine de minutes.</p>
-      <ul>
-        <li><a href="/video.html">Retour</a></li>
-      </ul>
-      <nav class="pager" aria-label="Pagination">
-        <a class="pager__link pager__link--prev" href="/album.html" rel="prev"
-          ><span>Page précédente</span>Album : Briançon</a
-        ><a class="pager__link pager__link--next" href="/quiz.html" rel="next"
-          ><span>Page suivante</span>Quiz : les gnomons</a
-        >
-      </nav>
-    </main>
+        </section>
+      </aside>
+    </div>
     <footer class="site-footer">
-      <p>Site réalisé par des élèves de première S dans le cadre d'un TPE.</p>
-      <p><a href="/contact.html">Contact</a> · <a href="/bibliographie.html">Bibliographie</a></p>
+      <p>
+        Site réalisé par des élèves de première S dans le cadre d'un TPE ·
+        <a href="/contact.html">Contact</a>
+      </p>
     </footer>
   </body>
 </html>

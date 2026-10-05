@@ -6,6 +6,7 @@
     <title>I) La mesure de l'année — La mesure du temps dans l'Antiquité</title>
     <meta name="description" content="Le calendrier lunaire : le premier calendrier" />
     <link rel="icon" href="/assets/images/favicon.ico" />
+    <link rel="preload" href="/assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
@@ -13,61 +14,195 @@
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-brand" href="/">
-          <img src="/assets/images/logo.png" alt="" width="138" height="192" />
-          <span>La mesure du temps dans l'Antiquité</span>
-        </a>
-        <input
-          class="site-nav__toggle"
-          type="checkbox"
-          id="menu-toggle"
-          aria-label="Afficher le menu"
-        />
-        <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
-        <nav class="site-nav" aria-label="Navigation principale">
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="/">Accueil</a></li>
-            <li class="site-nav__item">
-              <a href="/notions-de-physique.html">Notions de physique</a>
-            </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-l-annee/" aria-current="page">La mesure de l'année</a>
-              <ul class="site-nav__submenu">
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
-                </li>
+      <a class="site-brand" href="/">
+        <img src="/assets/images/logo.png" alt="" width="48" height="48" />
+        <span>La mesure du temps dans l'Antiquité</span>
+      </a>
+      <input
+        class="site-nav__toggle"
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Afficher le menu"
+      />
+      <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/video.html">Vidéos</a></li>
+          <li><a href="/album.html">Album</a></li>
+          <li><a href="/quiz.html">Quiz</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="site-banner"></div>
+    <div class="site-wrapper">
+      <main id="contenu" class="page">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <ol>
+            <li><a href="/">Accueil</a></li>
+            <li aria-current="page">I) La mesure de l'année</li>
+          </ol>
+        </nav>
+        <h1>I) La mesure de l'année</h1>
+        <div class="cards">
+          <article class="card">
+            <h2 class="card__title">
+              <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
+            </h2>
+            <p class="card__subtitle"><u>Le calendrier lunaire :</u> le premier calendrier</p>
+            <p>
+              Les premiers calendriers ont été lunaires car le cycle de la Lune est facile à
+              observer : il suffit pour cela de se baser sur les changements de forme de l’astre.
+            </p>
+            <p>
+              Une année dans le calendrier lunaire dure 354 jours (soit 12 lunaisons ; une lunaison
+              durant environ 29,53 jours).
+            </p>
+            <p>
+              Certains peuples cherchent à prendre en compte à la fois la période de 29 ou 30 jours
+              équivalente au mois lunaire et le rassemblement de douze mois dans une année. Mais
+              comme une année solaire ne comporte pas un nombre entier de mois lunaires, ils
+              utilisent diverses astuces pour ajuster leur calendrier. Comme par exemple le
+              <a href="/mesure-de-l-annee/calendriers-lunaires/calendrier-hebreu.html"
+                >calendrier hébreu</a
+              >.
+            </p>
+            <figure class="figure">
+              <a href="/assets/images/phase-de-la-lune-2017.jpg"
+                ><img
+                  src="/assets/images/phase-de-la-lune-2017.jpg"
+                  alt="Phase de la lune de 2017"
+                  width="1600"
+                  height="1020"
+                  loading="lazy"
+              /></a>
+              <figcaption>Phase de la lune de 2017</figcaption>
+            </figure>
+          </article>
+          <article class="card">
+            <h2 class="card__title">
+              <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
+                >Les calendriers luni-solaires</a
+              >
+            </h2>
+            <p class="card__subtitle">
+              <u>Les calendriers luni-solaires :</u> un calendrier à la fois lunaire et solaire
+            </p>
+            <p>
+              Les calendriers luni-solaires possèdent des mois lunaires d'environ 29 jours ainsi que
+              des années solaires de 365 jours. Afin de faire correpondre les cycles, il a fallu
+              ajouter un mois intercalaire environ tous les trois ans. Les calendriers chinois,
+              tibétains (illustration ci-dessous) et gaulois sont des calendriers luni-solaires.
+              Nous parlerons ici du calendrier gaulois, aussi appelé
+              <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
+                >calendrier de Coligny</a
+              >.
+            </p>
+            <figure class="figure">
+              <a href="/assets/images/calendrier-tibetain-2017-e-dition-me-dicis.jpeg"
+                ><img
+                  src="/assets/images/calendrier-tibetain-2017-e-dition-me-dicis.jpeg"
+                  alt="Calendrier tibétain 2017 édition médicis"
+                  width="1241"
+                  height="1584"
+                  loading="lazy"
+              /></a>
+              <figcaption>Calendrier tibétain 2017 édition médicis</figcaption>
+            </figure>
+          </article>
+          <article class="card">
+            <h2 class="card__title">
+              <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
+            </h2>
+            <p class="card__subtitle">
+              <u>Les calendriers solaires :</u> le calendrier majeur actuellement
+            </p>
+            <p>
+              De tous les calendriers mis au point par l’Homme, le calendrier solaire est utilisé
+              partout dans le monde. Cette nouveauté a pourtant mis du temps à s’installer. En
+              effet, le
+              <a href="/mesure-de-l-annee/calendriers-lunaires/">calendrier lunaire</a> est plus
+              facile à mettre en place que le solaire parce que les cycles de la lune sont plus
+              courts (et donc plus faciles à compter que ceux du soleil) et la lune change d'aspect
+              quotidiennement. Les calendriers solaires les plus connus sont : le calendrier hindou,
+              byzantin, grégorien : réforme du calendrier julien utilisé en France et dans beaucoup
+              de parties du monde (illustration ci-dessous). Nous parlerons ici du
+              <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
+                >calendrier julien</a
+              >.
+            </p>
+            <figure class="figure">
+              <a href="/assets/images/calendrier-pour-l-annee-1851.jpeg"
+                ><img
+                  src="/assets/images/calendrier-pour-l-annee-1851.jpeg"
+                  alt="Calendrier de l'annee 1851 dans le calendrier grégorien"
+                  width="1313"
+                  height="1054"
+                  loading="lazy"
+              /></a>
+              <figcaption>Calendrier de l'annee 1851 dans le calendrier grégorien</figcaption>
+            </figure>
+          </article>
+        </div>
+      </main>
+      <aside class="sidebar" aria-label="Sommaire">
+        <section class="widget">
+          <h2 class="widget__title">Menu</h2>
+          <ul class="widget__list">
+            <li><a href="/mesure-de-l-annee/" aria-current="page">I) La mesure de l'année</a></li>
+            <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
+            <li><a href="/notions-de-physique.html">Notions de physique</a></li>
+            <li><a href="/bibliographie.html">Bibliographie</a></li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title">
+            <a href="/mesure-de-l-annee/" aria-current="page">I) La mesure de l'année</a>
+          </h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-l-annee/calendriers-lunaires/calendrier-hebreu.html"
-                    >Le calendrier hébreu</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
-                    >Les calendriers luni-solaires</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
-                    >Le calendrier de Coligny</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
-                    >Le calendrier julien</a
+                    >Calendrier hébreu</a
                   >
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-la-journee/">La mesure de la journée</a>
-              <ul class="site-nav__submenu">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
+                >Les calendriers luni-solaires</a
+              >
+              <ul>
                 <li>
-                  <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
+                    >Calendrier de Coligny</a
+                  >
                 </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
+              <ul>
+                <li>
+                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
+                    >Calendrier julien</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title">
+            <a href="/mesure-de-la-journee/">II) La mesure de la journée</a>
+          </h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-solaires/gnomons.html">Les gnomons</a>
                 </li>
@@ -81,7 +216,11 @@
                     >Les anneaux de paysan</a
                   >
                 </li>
-                <li><a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-a-eau/clepsydres.html">Les clepsydres</a>
                 </li>
@@ -92,134 +231,15 @@
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item"><a href="/album.html">Album</a></li>
-            <li class="site-nav__item"><a href="/video.html">Vidéo</a></li>
-            <li class="site-nav__item"><a href="/quiz.html">Quiz</a></li>
-            <li class="site-nav__item"><a href="/bibliographie.html">Bibliographie</a></li>
-            <li class="site-nav__item"><a href="/contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main id="contenu" class="page">
-      <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <ol>
-          <li><a href="/">Accueil</a></li>
-          <li aria-current="page">I) La mesure de l'année</li>
-        </ol>
-      </nav>
-      <h1>I) La mesure de l'année</h1>
-      <div class="cards">
-        <article class="card">
-          <h2 class="card__title">
-            <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
-          </h2>
-          <p class="card__subtitle">Le calendrier lunaire : le premier calendrier</p>
-          <p>
-            Les premiers calendriers ont été lunaires car le cycle de la Lune est facile à observer
-            : il suffit pour cela de se baser sur les changements de forme de l’astre.
-          </p>
-          <p>
-            Une année dans le calendrier lunaire dure 354 jours (soit 12 lunaisons ; une lunaison
-            durant environ 29,53 jours).
-          </p>
-          <p>
-            Certains peuples cherchent à prendre en compte à la fois la période de 29 ou 30 jours
-            équivalente au mois lunaire et le rassemblement de douze mois dans une année. Mais comme
-            une année solaire ne comporte pas un nombre entier de mois lunaires, ils utilisent
-            diverses astuces pour ajuster leur calendrier. Comme par exemple le
-            <a href="/mesure-de-l-annee/calendriers-lunaires/calendrier-hebreu.html"
-              >calendrier hébreu</a
-            >.
-          </p>
-          <figure class="figure">
-            <a href="/assets/images/phase-de-la-lune-2017.jpg"
-              ><img
-                src="/assets/images/phase-de-la-lune-2017.jpg"
-                alt="Phase de la lune de 2017"
-                width="1600"
-                height="1020"
-                loading="lazy"
-            /></a>
-            <figcaption>Phase de la lune de 2017</figcaption>
-          </figure>
-        </article>
-        <article class="card">
-          <h2 class="card__title">
-            <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
-              >Les calendriers luni-solaires</a
-            >
-          </h2>
-          <p class="card__subtitle">
-            Les calendriers luni-solaires : un calendrier à la fois lunaire et solaire
-          </p>
-          <p>
-            Les calendriers luni-solaires possèdent des mois lunaires d'environ 29 jours ainsi que
-            des années solaires de 365 jours. Afin de faire correpondre les cycles, il a fallu
-            ajouter un mois intercalaire environ tous les trois ans. Les calendriers chinois,
-            tibétains (illustration ci-dessous) et gaulois sont des calendriers luni-solaires. Nous
-            parlerons ici du calendrier gaulois, aussi appelé
-            <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
-              >calendrier de Coligny</a
-            >.
-          </p>
-          <figure class="figure">
-            <a href="/assets/images/calendrier-tibetain-2017-e-dition-me-dicis.jpeg"
-              ><img
-                src="/assets/images/calendrier-tibetain-2017-e-dition-me-dicis.jpeg"
-                alt="Calendrier tibétain 2017 édition médicis"
-                width="1241"
-                height="1584"
-                loading="lazy"
-            /></a>
-            <figcaption>Calendrier tibétain 2017 édition médicis</figcaption>
-          </figure>
-        </article>
-        <article class="card">
-          <h2 class="card__title">
-            <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
-          </h2>
-          <p class="card__subtitle">Les calendriers solaires : le calendrier majeur actuellement</p>
-          <p>
-            De tous les calendriers mis au point par l’Homme, le calendrier solaire est utilisé
-            partout dans le monde. Cette nouveauté a pourtant mis du temps à s’installer. En effet,
-            le <a href="/mesure-de-l-annee/calendriers-lunaires/">calendrier lunaire</a> est plus
-            facile à mettre en place que le solaire parce que les cycles de la lune sont plus courts
-            (et donc plus faciles à compter que ceux du soleil) et la lune change d'aspect
-            quotidiennement. Les calendriers solaires les plus connus sont : le calendrier hindou,
-            byzantin, grégorien : réforme du calendrier julien utilisé en France et dans beaucoup de
-            parties du monde (illustration ci-dessous). Nous parlerons ici du
-            <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
-              >calendrier julien</a
-            >.
-          </p>
-          <figure class="figure">
-            <a href="/assets/images/calendrier-pour-l-annee-1851.jpeg"
-              ><img
-                src="/assets/images/calendrier-pour-l-annee-1851.jpeg"
-                alt="Calendrier de l'annee 1851 dans le calendrier grégorien"
-                width="1313"
-                height="1054"
-                loading="lazy"
-            /></a>
-            <figcaption>Calendrier de l'annee 1851 dans le calendrier grégorien</figcaption>
-          </figure>
-        </article>
-      </div>
-      <nav class="pager" aria-label="Pagination">
-        <a class="pager__link pager__link--prev" href="/notions-de-physique.html" rel="prev"
-          ><span>Page précédente</span>Notions de physique</a
-        ><a
-          class="pager__link pager__link--next"
-          href="/mesure-de-l-annee/calendriers-lunaires/"
-          rel="next"
-          ><span>Page suivante</span>Les calendriers lunaires</a
-        >
-      </nav>
-    </main>
+        </section>
+      </aside>
+    </div>
     <footer class="site-footer">
-      <p>Site réalisé par des élèves de première S dans le cadre d'un TPE.</p>
-      <p><a href="/contact.html">Contact</a> · <a href="/bibliographie.html">Bibliographie</a></p>
+      <p>
+        Site réalisé par des élèves de première S dans le cadre d'un TPE ·
+        <a href="/contact.html">Contact</a>
+      </p>
     </footer>
   </body>
 </html>

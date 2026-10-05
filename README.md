@@ -3,7 +3,9 @@
 Site statique d'un TPE de première S sur la mesure du temps pendant l'Antiquité (calendriers,
 gnomons, cadrans solaires, clepsydres). En ligne sur <https://mesure-du-temps.julsql.fr>.
 
-Uniquement du HTML et du CSS : pas de JavaScript, pas d'étape de build.
+HTML et CSS uniquement, sans étape de build, sans backend ni base de données. Le thème reprend
+celui du site d'origine (e-monsite). Seule exception au « zéro JavaScript » : `assets/js/album.js`
+(15 lignes) pour naviguer au clavier (← → Échap) dans la visionneuse de l'album.
 
 ## Structure
 
@@ -21,20 +23,22 @@ public/                      racine servie par nginx
 ├── 404.html
 └── assets/
     ├── css/
-    │   ├── base.css         variables de thème (clair/sombre), reset, typographie
-    │   ├── layout.css       en-tête, navigation, zone de contenu, pied de page
+    │   ├── base.css         polices, variables du thème, reset, typographie
+    │   ├── layout.css       barre du haut, bannière, contenu, menu latéral, pied de page
     │   └── components.css   fil d'Ariane, figures, colonnes, cartes, galerie, quiz…
+    ├── fonts/               Roboto, Droid Serif, Courgette (auto-hébergées)
+    ├── js/album.js          navigation clavier de la visionneuse
     └── images/
 ```
 
-L'en-tête, la navigation et le pied de page sont dupliqués dans chaque page : une modification
+La barre du haut, le menu latéral et le pied de page sont dupliqués dans chaque page : une modification
 du menu doit être reportée dans tous les fichiers HTML.
 
 ## Développement
 
 ```sh
 docker compose -f docker-compose-local.yml up --build   # http://localhost:8012
-npx prettier --write "public/**/*.{html,css}"           # formatage (100 colonnes)
+npx prettier --write "public/**/*.{html,css,js}"          # formatage (100 colonnes)
 ```
 
 Les liens sont absolus depuis la racine (`/assets/...`) : le site doit être servi par un serveur

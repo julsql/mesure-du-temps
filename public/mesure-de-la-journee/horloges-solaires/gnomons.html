@@ -9,6 +9,7 @@
       content="Connus bien avant l'Antiquité, les gnomons peuvent être considérés comme les premiers instruments de mesure du temps. Ils ont permis de faire considérablem"
     />
     <link rel="icon" href="/assets/images/favicon.ico" />
+    <link rel="preload" href="/assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/assets/css/base.css" />
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
@@ -16,61 +17,160 @@
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-brand" href="/">
-          <img src="/assets/images/logo.png" alt="" width="138" height="192" />
-          <span>La mesure du temps dans l'Antiquité</span>
-        </a>
-        <input
-          class="site-nav__toggle"
-          type="checkbox"
-          id="menu-toggle"
-          aria-label="Afficher le menu"
-        />
-        <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
-        <nav class="site-nav" aria-label="Navigation principale">
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="/">Accueil</a></li>
-            <li class="site-nav__item">
-              <a href="/notions-de-physique.html">Notions de physique</a>
-            </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-l-annee/">La mesure de l'année</a>
-              <ul class="site-nav__submenu">
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
-                </li>
+      <a class="site-brand" href="/">
+        <img src="/assets/images/logo.png" alt="" width="48" height="48" />
+        <span>La mesure du temps dans l'Antiquité</span>
+      </a>
+      <input
+        class="site-nav__toggle"
+        type="checkbox"
+        id="menu-toggle"
+        aria-label="Afficher le menu"
+      />
+      <label class="site-nav__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/video.html">Vidéos</a></li>
+          <li><a href="/album.html">Album</a></li>
+          <li><a href="/quiz.html">Quiz</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="site-banner"></div>
+    <div class="site-wrapper">
+      <main id="contenu" class="page">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <ol>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
+            <li><a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a></li>
+            <li aria-current="page">Les gnomons</li>
+          </ol>
+        </nav>
+        <h1>Les gnomons</h1>
+        <figure class="figure">
+          <a href="/assets/images/gnomon-style.jpg"
+            ><img
+              src="/assets/images/gnomon-style.jpg"
+              alt="Dessin d'un gnomon"
+              width="592"
+              height="514"
+              loading="lazy"
+          /></a>
+          <figcaption>Dessin d'un gnomon</figcaption>
+        </figure>
+        <div class="columns columns--wide-first">
+          <div>
+            <h2><u>Les gnomons :</u> ancêtres des cadrans solaires.</h2>
+            <p>
+              Connus bien avant l'Antiquité, les gnomons peuvent être considérés comme les premiers
+              instruments de mesure du temps. Ils ont permis de faire considérablement progresser
+              l'astronomie et la géographie.
+            </p>
+            <p>
+              C’est un cadran solaire primitif, constitué d'une simple tige planté droit à même le
+              sol, appelée style (un homme debout peut d’ailleurs s'en apparenter). La longueur et
+              la direction de l'ombre donnent une approximation de l'heure du jour. Ainsi lorsque le
+              soleil est au zénith, l'ombre sera très petite et il sera midi.
+            </p>
+            <p>
+              Cependant, cet outil a de nombreuses limites. Comme tout cadran solaire, il faut qu'il
+              fasse jour et que le temps soit clair. De plus, contrairement aux cadrans solaires,
+              les gnomons découpent la journée en 12 heures et la nuit en 12 heures. Les cadrans
+              solaires, comme les horloges actuelles découpent le jour (nuit comprise) en 24 parties
+              égales sur toute l'année, certaines nuits ne comportant que quelques heures suivant la
+              saison. C’est ce qui va faire qu’il sera abandonné au profil des cadrans solaires.
+            </p>
+            <p>
+              Vous pensez avoir tout compris sur les gnomons ? Alors allez tester vos connaissances
+              en réussissant ce <a href="/quiz.html">quiz</a> !
+            </p>
+          </div>
+          <div>
+            <figure class="figure">
+              <a href="/assets/images/gnomon-d-anaximandre-mn.jpg"
+                ><img
+                  src="/assets/images/gnomon-d-anaximandre-mn.jpg"
+                  alt="Anaximandre enseigne la fabrication du gnomon"
+                  width="505"
+                  height="650"
+                  loading="lazy"
+              /></a>
+              <figcaption>Anaximandre enseigne la fabrication du gnomon</figcaption>
+            </figure>
+          </div>
+        </div>
+        <figure class="figure">
+          <a href="/assets/images/gnomon-21juin-.gif"
+            ><img
+              src="/assets/images/gnomon-21juin-.gif"
+              alt="Simulation de gnomon à Povray au solstice d'été à la latitude 50° Nord"
+              width="320"
+              height="240"
+              loading="lazy"
+          /></a>
+          <figcaption>
+            Simulation de gnomon à Povray au solstice d'été à la latitude 50° Nord
+          </figcaption>
+        </figure>
+      </main>
+      <aside class="sidebar" aria-label="Sommaire">
+        <section class="widget">
+          <h2 class="widget__title">Menu</h2>
+          <ul class="widget__list">
+            <li><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></li>
+            <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
+            <li><a href="/notions-de-physique.html">Notions de physique</a></li>
+            <li><a href="/bibliographie.html">Bibliographie</a></li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title"><a href="/mesure-de-l-annee/">I) La mesure de l'année</a></h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-lunaires/">Les calendriers lunaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-l-annee/calendriers-lunaires/calendrier-hebreu.html"
-                    >Le calendrier hébreu</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
-                    >Les calendriers luni-solaires</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
-                    >Le calendrier de Coligny</a
-                  >
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
-                </li>
-                <li>
-                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
-                    >Le calendrier julien</a
+                    >Calendrier hébreu</a
                   >
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item site-nav__item--parent">
-              <a href="/mesure-de-la-journee/">La mesure de la journée</a>
-              <ul class="site-nav__submenu">
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-luni-solaires/"
+                >Les calendriers luni-solaires</a
+              >
+              <ul>
                 <li>
-                  <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+                  <a href="/mesure-de-l-annee/calendriers-luni-solaires/calendrier-de-coligny.html"
+                    >Calendrier de Coligny</a
+                  >
                 </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-l-annee/calendriers-solaires/">Les calendriers solaires</a>
+              <ul>
+                <li>
+                  <a href="/mesure-de-l-annee/calendriers-solaires/calendrier-julien.html"
+                    >Calendrier julien</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="widget">
+          <h2 class="widget__title">
+            <a href="/mesure-de-la-journee/">II) La mesure de la journée</a>
+          </h2>
+          <ul class="widget__list">
+            <li>
+              <a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-solaires/gnomons.html" aria-current="page"
                     >Les gnomons</a
@@ -86,7 +186,11 @@
                     >Les anneaux de paysan</a
                   >
                 </li>
-                <li><a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/mesure-de-la-journee/horloges-a-eau/">Les horloges à eau</a>
+              <ul>
                 <li>
                   <a href="/mesure-de-la-journee/horloges-a-eau/clepsydres.html">Les clepsydres</a>
                 </li>
@@ -97,107 +201,15 @@
                 </li>
               </ul>
             </li>
-            <li class="site-nav__item"><a href="/album.html">Album</a></li>
-            <li class="site-nav__item"><a href="/video.html">Vidéo</a></li>
-            <li class="site-nav__item"><a href="/quiz.html">Quiz</a></li>
-            <li class="site-nav__item"><a href="/bibliographie.html">Bibliographie</a></li>
-            <li class="site-nav__item"><a href="/contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main id="contenu" class="page">
-      <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <ol>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/mesure-de-la-journee/">II) La mesure de la journée</a></li>
-          <li><a href="/mesure-de-la-journee/horloges-solaires/">Les horloges solaires</a></li>
-          <li aria-current="page">Les gnomons</li>
-        </ol>
-      </nav>
-      <h1>Les gnomons</h1>
-      <figure class="figure">
-        <a href="/assets/images/gnomon-style.jpg"
-          ><img
-            src="/assets/images/gnomon-style.jpg"
-            alt="Dessin d'un gnomon"
-            width="592"
-            height="514"
-            loading="lazy"
-        /></a>
-        <figcaption>Dessin d'un gnomon</figcaption>
-      </figure>
-      <div class="columns columns--wide-first">
-        <div>
-          <h2>Les gnomons : ancêtres des cadrans solaires.</h2>
-          <p>
-            Connus bien avant l'Antiquité, les gnomons peuvent être considérés comme les premiers
-            instruments de mesure du temps. Ils ont permis de faire considérablement progresser
-            l'astronomie et la géographie.
-          </p>
-          <p>
-            C’est un cadran solaire primitif, constitué d'une simple tige planté droit à même le
-            sol, appelée style (un homme debout peut d’ailleurs s'en apparenter). La longueur et la
-            direction de l'ombre donnent une approximation de l'heure du jour. Ainsi lorsque le
-            soleil est au zénith, l'ombre sera très petite et il sera midi.
-          </p>
-          <p>
-            Cependant, cet outil a de nombreuses limites. Comme tout cadran solaire, il faut qu'il
-            fasse jour et que le temps soit clair. De plus, contrairement aux cadrans solaires, les
-            gnomons découpent la journée en 12 heures et la nuit en 12 heures. Les cadrans solaires,
-            comme les horloges actuelles découpent le jour (nuit comprise) en 24 parties égales sur
-            toute l'année, certaines nuits ne comportant que quelques heures suivant la saison.
-            C’est ce qui va faire qu’il sera abandonné au profil des cadrans solaires.
-          </p>
-          <p>
-            Vous pensez avoir tout compris sur les gnomons ? Alors allez tester vos connaissances en
-            réussissant ce <a href="/quiz.html">quiz</a> !
-          </p>
-        </div>
-        <div>
-          <figure class="figure">
-            <a href="/assets/images/gnomon-d-anaximandre-mn.jpg"
-              ><img
-                src="/assets/images/gnomon-d-anaximandre-mn.jpg"
-                alt="Anaximandre enseigne la fabrication du gnomon"
-                width="505"
-                height="650"
-                loading="lazy"
-            /></a>
-            <figcaption>Anaximandre enseigne la fabrication du gnomon</figcaption>
-          </figure>
-        </div>
-      </div>
-      <figure class="figure">
-        <a href="/assets/images/gnomon-21juin-.gif"
-          ><img
-            src="/assets/images/gnomon-21juin-.gif"
-            alt="Simulation de gnomon à Povray au solstice d'été à la latitude 50° Nord"
-            width="320"
-            height="240"
-            loading="lazy"
-        /></a>
-        <figcaption>
-          Simulation de gnomon à Povray au solstice d'été à la latitude 50° Nord
-        </figcaption>
-      </figure>
-      <nav class="pager" aria-label="Pagination">
-        <a
-          class="pager__link pager__link--prev"
-          href="/mesure-de-la-journee/horloges-solaires/"
-          rel="prev"
-          ><span>Page précédente</span>Les horloges solaires</a
-        ><a
-          class="pager__link pager__link--next"
-          href="/mesure-de-la-journee/horloges-solaires/cadrans-solaires.html"
-          rel="next"
-          ><span>Page suivante</span>Les cadrans solaires</a
-        >
-      </nav>
-    </main>
+        </section>
+      </aside>
+    </div>
     <footer class="site-footer">
-      <p>Site réalisé par des élèves de première S dans le cadre d'un TPE.</p>
-      <p><a href="/contact.html">Contact</a> · <a href="/bibliographie.html">Bibliographie</a></p>
+      <p>
+        Site réalisé par des élèves de première S dans le cadre d'un TPE ·
+        <a href="/contact.html">Contact</a>
+      </p>
     </footer>
   </body>
 </html>
