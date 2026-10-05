@@ -1,0 +1,379 @@
+/* Composants : blocs réutilisables dans le contenu des pages. */
+
+/* Fil d'Ariane */
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: 0 0 var(--space-m);
+  padding: 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.breadcrumb li + li::before {
+  content: "›";
+  margin-right: var(--space-xs);
+}
+
+/* Bouton */
+
+.button {
+  display: inline-block;
+  padding: var(--space-s) var(--space-m);
+  background: var(--color-accent);
+  border: 0;
+  border-radius: var(--radius);
+  color: var(--color-bg);
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+
+/* Textes mis en avant */
+
+.question {
+  margin: var(--space-l) 0;
+  padding: var(--space-m);
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+}
+
+blockquote {
+  margin: 0 0 var(--space-m);
+  padding-left: var(--space-m);
+  border-left: 4px solid var(--color-border);
+  font-style: italic;
+}
+
+blockquote p {
+  margin-bottom: var(--space-xs);
+}
+
+blockquote footer {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+/* Listes */
+
+.outline,
+.outline ol {
+  list-style: none;
+}
+
+.outline {
+  padding: 0;
+  font-weight: bold;
+}
+
+.outline ol {
+  padding-left: var(--space-l);
+  font-weight: normal;
+  list-style: lower-alpha;
+}
+
+.link-list {
+  padding-left: 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+/* Images */
+
+.figure {
+  max-width: 32rem;
+  margin: var(--space-l) auto;
+  text-align: center;
+}
+
+.figure img {
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--radius);
+}
+
+.figure figcaption {
+  margin-top: var(--space-s);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 45rem) {
+  .figure--left,
+  .figure--right {
+    max-width: 40%;
+    margin-top: var(--space-xs);
+  }
+
+  .figure--left {
+    float: left;
+    margin-right: var(--space-l);
+  }
+
+  .figure--right {
+    float: right;
+    margin-left: var(--space-l);
+  }
+}
+
+.figure-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-l);
+  align-items: start;
+}
+
+.figure-row .figure {
+  margin: var(--space-m) 0;
+}
+
+/* Colonnes texte / illustration */
+
+.columns {
+  display: grid;
+  gap: var(--space-l);
+  align-items: start;
+  margin-bottom: var(--space-m);
+}
+
+.columns .figure {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.columns h2:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 45rem) {
+  .columns--wide-first {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .columns--wide-last {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* Cartes (sommaires de catégories) */
+
+.cards {
+  display: grid;
+  gap: var(--space-l);
+  margin: var(--space-l) 0;
+  clear: both;
+}
+
+.card {
+  padding: var(--space-l);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__subtitle {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+/* Vidéo */
+
+.video {
+  aspect-ratio: 16 / 9;
+  margin-bottom: var(--space-l);
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius);
+}
+
+/* Galerie photo + visionneuse en CSS pur (:target) */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: var(--space-m);
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: transform 0.2s;
+}
+
+.gallery a:hover img {
+  transform: scale(1.03);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  margin: 0;
+  padding: var(--space-l);
+  background: rgb(0 0 0 / 92%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.lightbox:target {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  gap: var(--space-s);
+}
+
+.lightbox img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.lightbox figcaption {
+  position: relative;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+}
+
+.lightbox__nav,
+.lightbox__close {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: rgb(0 0 0 / 60%);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.lightbox__nav {
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.lightbox__nav--prev {
+  left: var(--space-m);
+}
+
+.lightbox__nav--next {
+  right: var(--space-m);
+}
+
+.lightbox__close {
+  top: var(--space-m);
+  right: var(--space-m);
+}
+
+/* Quiz en CSS pur : la correction s'affiche selon la réponse cochée (:has). */
+
+.quiz__question {
+  margin: 0 0 var(--space-l);
+  padding: var(--space-m) var(--space-l);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.quiz__question legend {
+  padding: 0 var(--space-s);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.quiz__question .figure {
+  max-width: 14rem;
+  margin: var(--space-m) 0;
+}
+
+.quiz__option {
+  display: block;
+  padding: var(--space-xs) 0;
+  cursor: pointer;
+}
+
+.quiz__feedback {
+  display: none;
+  margin: var(--space-s) 0 0;
+  font-weight: bold;
+}
+
+.quiz__feedback--right {
+  color: var(--color-success);
+}
+
+.quiz__feedback--wrong {
+  color: var(--color-error);
+}
+
+.quiz__question:has(.quiz__option--correct input:checked) .quiz__feedback--right,
+.quiz__question:has(.quiz__option:not(.quiz__option--correct) input:checked)
+  .quiz__feedback--wrong {
+  display: block;
+}
+
+/* Navigation page précédente / suivante */
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-m);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-l);
+  border-top: 1px solid var(--color-border);
+  clear: both;
+}
+
+.pager__link {
+  max-width: 48%;
+  text-decoration: none;
+}
+
+.pager__link span {
+  display: block;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.pager__link--next {
+  margin-left: auto;
+  text-align: right;
+}

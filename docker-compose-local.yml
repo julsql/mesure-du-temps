@@ -1,0 +1,6 @@
+services:
+  mesure-du-temps:
+    build: .
+    container_name: mesure_du_temps_local
+    ports:
+      - "8012:80"

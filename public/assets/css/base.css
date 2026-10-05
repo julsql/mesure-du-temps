@@ -1,0 +1,119 @@
+/* Base : variables de thème, reset minimal et typographie. */
+
+:root {
+  color-scheme: light dark;
+
+  --color-bg: #faf6ee;
+  --color-surface: #ffffff;
+  --color-text: #2b2620;
+  --color-muted: #675e53;
+  --color-accent: #a84a24;
+  --color-border: #e4dccd;
+  --color-success: #2f7d4f;
+  --color-error: #b3352b;
+
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+  --space-xl: 3.5rem;
+
+  --radius: 0.5rem;
+  --content-width: 60rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #14161c;
+    --color-surface: #1d2029;
+    --color-text: #ece6da;
+    --color-muted: #a8a093;
+    --color-accent: #ffa07a;
+    --color-border: #2e323d;
+    --color-success: #6fcf97;
+    --color-error: #ff8a80;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+h1 {
+  margin: 0 0 var(--space-l);
+  font-size: clamp(1.9rem, 5vw, 2.75rem);
+}
+
+h2 {
+  margin: var(--space-l) 0 var(--space-m);
+  color: var(--color-accent);
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: var(--space-l) 0 var(--space-s);
+  font-size: 1.15rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 var(--space-m);
+}
+
+a {
+  color: var(--color-accent);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+sub,
+sup {
+  line-height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
