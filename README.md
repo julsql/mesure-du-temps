@@ -39,6 +39,7 @@ du menu doit être reportée dans tous les fichiers HTML.
 ```sh
 docker compose -f docker-compose-local.yml up --build   # http://localhost:8012
 npx prettier --write "public/**/*.{html,css,js}"          # formatage (100 colonnes)
+python3 -m unittest discover -s tests                     # contrôles SEO (titres, meta, OG, JSON-LD, sitemap)
 ```
 
 Les liens sont absolus depuis la racine (`/assets/...`) : le site doit être servi par un serveur
