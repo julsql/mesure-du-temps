@@ -7,6 +7,12 @@ HTML et CSS uniquement, sans étape de build, sans backend ni base de données. 
 celui du site d'origine (e-monsite). Seule exception au « zéro JavaScript » : `assets/js/album.js`
 (15 lignes) pour naviguer au clavier (← → Échap) dans la visionneuse de l'album.
 
+## Aperçu
+
+<p align="center">
+  <img src="docs/screenshots/home.jpg" alt="Page d'accueil" width="80%">
+</p>
+
 ## Structure
 
 ```
