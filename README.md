@@ -10,7 +10,8 @@ celui du site d'origine (e-monsite). Seule exception au « zéro JavaScript » :
 ## Aperçu
 
 <p align="center">
-  <img src="docs/screenshots/home.jpg" alt="Page d'accueil" width="80%">
+  <img src="docs/screenshots/home.jpg" alt="Page d'accueil" width="49%">
+  <img src="docs/screenshots/clepsydres.jpg" alt="Article « Les clepsydres »" width="49%">
 </p>
 
 ## Structure
